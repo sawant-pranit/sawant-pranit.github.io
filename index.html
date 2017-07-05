@@ -6,8 +6,32 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/lightbox.min.css">
+<script src="js/lightbox-plus-jquery.min.js"></script>
 <style>
-	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+	
+a {
+    color: inherit;
+   text-decoration: none;
+	}
+.blink {
+	opacity: 0;
+    color: white;
+    background-color: #009688;
+    animation: blinking 1s linear infinite;
+}
+
+@keyframes blinking {
+  from,
+  49.9% {
+    opacity: 0;
+  }
+  50%,
+  to {
+    opacity: 1;
+  }
+}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
 <body class="w3-light-grey">
 
@@ -114,7 +138,14 @@
 							<h6 class="">Responsible for re-architecturing project with MVVM pattern, refactoring legacy code. Implemented TDD practices.<br>
 								<a href="https://play.google.com/store/apps/details?id=com.bwellthy" target="_blank" style="text-decoration:none;color:#009688">Project Link- "https://play.google.com/store/apps/details?id=com.bwellthy"</a>
 							</h6>
+							<div>
+								<a class="example-image-link" href="images/close.png" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="images/close.png" alt="" style="display:none;"/><span class="blink">SCREENSHOTS:-</span></a>
+								<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt=""style="display:none;" /></a>
+								<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt=""style="display:none;" /></a>
+								<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt=""style="display:none;" /></a>
+							</div>
 							<hr>
+
 						</div>
 						<!-- gutrgoo -->
 						<div class="w3-container">
@@ -129,12 +160,6 @@
 							<h6 class="">The newest Social Media platform, targeting micro contenting. Responsible for MVP design pattern with Repository pattern, Websocket client side implementation.<br>
 							<a href="https://play.google.com/store/apps/details?id=com.shaadi.android" target="_blank" style="text-decoration:none;color:#009688">Project Link- "https://play.google.com/store/apps/details?id=com.shaadi.android"</a>
 							</h6>
-							<div>
-								<a class="example-image-link" href="images/close.png" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="images/close.png" alt="" style="display:none;"/><span class="blink">SCREENSHOTS:-</span></a>
-								<a class="example-image-link" href="https://github.com/gru001/gru001.github.io/blob/master/images/bci_1.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="images/shaadi_2.png" alt=""style="display:none;" /></a>
-								<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="/images/shaadi_3.png" alt=""style="display:none;" /></a>
-								<a class="example-image-link" href="/images/shaadi_4.png" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt=""style="display:none;" /></a>
-							</div>
 							<hr>
 						</div>
 						<!-- foodsocial -->
@@ -229,7 +254,7 @@
 					<a href="http://stackoverflow.com/users/1758960/gru?tab=profile" target="_blank"><i class="fa fa-stack-overflow w3-hover-opacity"></i></a>
 					<a href="https://github.com/gru001" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
 					<a href="https://in.linkedin.com/in/pranit-sawant-06a35057" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-					<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Pranit sawant</a></p>
+					<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Aniket jadhav (UI developer)</a></p>
 				</footer>
 	</body>
 </html>
