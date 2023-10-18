@@ -1,464 +1,59 @@
 <!DOCTYPE html>
 <html>
-<title>Pranit sawant</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/lightbox.min.css">
-<script src="js/lightbox-plus-jquery.min.js"></script>
-<style>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-	p.show_more {
-		text-align: center;
-		color: #009688;
-		text-transform: capitalize;
-		cursor: pointer;
-	}
-	p.show_less{
-		text-align: center;
-		color: #009688;
-		text-transform: capitalize;
-		cursor: pointer;
-	}
-	
-	a {
-		color: inherit;
-		text-decoration: none;
-	}
-	.blink {
-		opacity: 0;
-		color: white;
-		background-color: #009688;
-		animation: blinking 1s linear infinite;
-	}
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
 
-	@keyframes blinking {
-		from,
-		49.9% {
-			opacity: 0;
-		}
-		50%,
-		to {
-			opacity: 1;
-		}
-	}
-	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
-<body class="w3-light-grey">
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
 
-	<!-- Page Container -->
-	<div class="w3-content w3-margin-top" style="max-width:1400px;">
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
 
-		<!-- The Grid -->
-		<div class="w3-row-padding">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Personal portfolio website">
 
-			<!-- Left Column -->
-			<div class="w3-third">
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="portfolio">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-				<div class="w3-white w3-text-grey w3-card-4">
-					<div class="w3-display-container">
-						<img src="pranit.jpg" style="width:100%" alt="Avatar">
-						<div class="w3-display-bottomleft w3-container w3-text-black">
-							<h2 style="color: #06c2b1;font-weight: bold;">Pranit Sawant</h2>
-						</div>
-					</div>
-					<div class="w3-container">
-						<!-- basic info -->
-						<p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i> Android Developer</p>
-						<p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Mumbai</p>
-						<p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>pranitsawant01@gmail.com</p>
-						<hr>
-						<!-- skill -->
-						<p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-						<ul>
-							<li><p>TCP​ and BOSH​ protocol for chat using Smack.</p></li>
-							<li><p>OpenCV​ for image processing.</p></li>
-							<li><p>Optical Character Recognition.</p></li>
-							<li><p>Social media integration like Facebook​, Twitter​, Instagramand &amp; Youtube​.</p>
-								<li><p>Analytical tools like Fabric(Crittercism)​, Google Analytics​ and Firebase​.</p></li>
-								<li><p>SVN and Git for version controlling.</p></li>
-								<li><p>Worked with Google maps​, Geocoding​ and Reverse GeoCoding​.</p></li>
-								<li><p>Localization​, multidexing.</p></li> 
-								<li><p>Network libraries like Volley, Picasso, Retrofit (RxAndroid) and Glide.</p></li>
-								<li><p>Design Pattern MVC, Singleton, Factory, DAO, MVP (with Repository) and MVVM.</p></li>
-								<li><p>Android Hardware Manager API like Camera, Sensors and Bluetooth.</p></li>
-								<li><p>Field and method binding library Butter Knife.</p></li>
-								<li><p>Proper and on time Code Review, Code Cleanup and Commenting.</p></li>
-								<li><p>Working with media player library ExoPlayer.</p></li>
-								<li><p>Using Timber for logs (Production and Debug).</p></li>
-								<li><p>Using nv-websocket-client for websocket client implementation.</p></li>
-								<li><p>Dexter library for managing runtime permissions.</p></li>
-							</ul>
-							<!-- languages -->
-							<p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-							<p>English</p>
-							<div class="w3-light-grey w3-round-xlarge">
-								<div class="w3-round-xlarge w3-teal" style="height:24px;width:100%;text-align: center;">100%</div>
-							</div>
-							<p>Marathi</p>
-							<div class="w3-light-grey w3-round-xlarge">
-								<div class="w3-round-xlarge w3-teal" style="height:24px;width:100%;text-align: center;">100%</div>
-							</div>
-							<p>Hindi</p>
-							<div class="w3-light-grey w3-round-xlarge">
-								<div class="w3-round-xlarge w3-teal" style="height:24px;width:100%;text-align: center;">100%</div>
-							</div>
-							<br>
-						</div>
-					</div><br>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
 
-					<!-- End Left Column -->
-				</div>
+  <title>portfolio</title>
+  <link rel="manifest" href="manifest.json">
 
-				<!-- Right Column -->
-				<div class="w3-twothird">
-
-					<!-- work experience -->
-					<div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-						<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-						<!-- QuEST -->
-						<div class="w3-container">
-							<h5 class="w3-opacity"><b>QuEST Global, Banglore — Consultant at Baker Hughes, Mumbai— Senior Lead Engineer</b></h5>
-							<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2018 -  <span class="w3-tag w3-teal w3-round">PRESENT</span></h6>
-							<p>Worked on Android Application and IOS application.</p>
-						</div>
-						<div class="w3-container">
-							<h5 class="w3-opacity"><b>Wellthy Therapeutics, Churchgate — Lead Engineer</b></h5>
-							<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - Aug 2018<span class="w3-tag w3-teal w3-round">PRESENT</span></h6>
-							<p>Development of Wellthy Diabetes Android application.</p>
-						</div>
-						<div class="w3-container">
-							<h5 class="w3-opacity"><b>PeopleInteractive (I) Pvt. Ltd., Tardeo — Sr. Developer</b></h5>
-							<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2015 - Dec 2016<span class="w3-tag w3-teal w3-round"></span></h6>
-							<p>Development of Shaadi. com Android application.</p>
-						</div>
-						<div class="w3-container">
-							<h5 class="w3-opacity"><b>NeosoftTechnologies Pvt. Ltd., Dadar — Sr. Developer</b></h5>
-							<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2012 - Jul 2015<span class="w3-tag w3-teal w3-round"></span></h6>
-							<p>Worked on 10+ android applications, managing team, mentor and train juniors, estimate projects, communicate with clients for requirement gathering.</p> </div>
-						</div>
-						<!-- education -->
-						<div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-							<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-							<div class="w3-container">
-								<h5 class="w3-opacity"><b>MGM CET, Kamothe — B.E. (I.T.)</b></h5>
-								<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2009 - July 2012</h6>
-								<p>Completed Bachelor’s with agg of 62%.</p>
-							</div>
-						</div>
-						<!-- projects -->
-						<div class="w3-container w3-card-2 w3-white">
-							<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-android fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
-							<!-- adroid 6000 -->
-							<!-- start -->
-							<div class="w3-container">
-								<h5 class="w3-opacity"><b>ADROID 6000</b> — Baker Hughes</h5>
-								<h6 class="">Application for ADROID 6000 pressure sensor, worked on MVVM architecture using kotlin coroutine and respository pattern. Developed using TDD approach.<br>
-								</h6>
-								<hr>
-
-							</div>
-							<!-- end -->
-							<!-- pt900 -->
-							<!-- start -->
-							<div class="w3-container">
-								<h5 class="w3-opacity"><b>Transport PT900(IOS application)</b> — Baker Hughes (Team of 5)</h5>
-								<h6 class="">Written in swift, responsible for UI and view controller implementation.<br>
-									<a href="https://apps.apple.com/us/app/transport-pt900/id1462366920" target="_blank" style="text-decoration:none;color:#009688">Project Link- "https://apps.apple.com/us/app/transport-pt900/id1462366920"</a>
-								</h6>
-								<hr>
-
-							</div>
-							<!-- end -->
-							<!-- terps -->
-							<div class="w3-container">
-								<h5 class="w3-opacity"><b>TERPS</b> — Baker Hughes (Team of 4)</h5>
-								<h6 class="">Responsible for architecturing project with MVVM pattern, refactoring legacy code. Implemented TDD practices. Added JaCoCo for test coverage.<br>
-									<a href="https://play.google.com/store/apps/details?id=com.ge.usbterps" target="_blank" style="text-decoration:none;color:#009688">Project Link- "https://play.google.com/store/apps/details?id=com.ge.usbterps"</a>
-								</h6>
-								<div>
-									<a class="example-image-link" href="images/terps_1.png" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-										<img class="example-image" src="images/terps_1.png" alt="" style="display:none;"/>
-										<span class="blink">SCREENSHOTS:-</span>
-									</a>
-									<a class="example-image-link" href="images/terps_2.png" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-										<img class="example-image" src="terps_2.png" alt=""style="display:none;" />
-									</a>
-									<a class="example-image-link" href="images/terps_3.png" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing.">
-										<img class="example-image" src="images/terps_3.png" alt=""style="display:none;" />
-									</a>
-									<a class="example-image-link" href="images/terps_4.png" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
-										<img class="example-image" src="images/terps_4.png" alt=""style="display:none;" />
-									</a>
-									<a class="example-image-link" href="images/terps_5.png" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
-										<img class="example-image" src="images/terps_5.png" alt=""style="display:none;" />
-									</a>
-									<a class="example-image-link" href="images/terps_6.png" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
-										<img class="example-image" src="images/terps_6.png" alt=""style="display:none;" />
-									</a>
-								</div>
-								<hr>
-
-							</div>
-							<!-- wellthy -->
-							<div class="w3-container">
-								<h5 class="w3-opacity"><b>Wellthy Diabetes </b>— Wellthy Therapeutics  (Team of 3)</h5>
-								<h6 class="">Responsible for re-architecturing project with MVVM pattern, refactoring legacy code. Implemented TDD practices.<br>
-									<a href="https://play.google.com/store/apps/details?id=com.bwellthy" target="_blank" style="text-decoration:none;color:#009688">Project Link- "https://play.google.com/store/apps/details?id=com.bwellthy"</a>
-								</h6>
-								<div>
-									<a class="example-image-link" href="images/wellthy_1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-										<img class="example-image" src="images/wellthy_1.jpg" alt="" style="display:none;"/>
-										<span class="blink">SCREENSHOTS:-</span>
-									</a>
-									<a class="example-image-link" href="images/wellthy_2.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-										<img class="example-image" src="wellthy_2.jpg" alt=""style="display:none;" />
-									</a>
-									<a class="example-image-link" href="images/wellthy_3.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing.">
-										<img class="example-image" src="images/wellthy_3.jpg" alt=""style="display:none;" />
-									</a>
-									<a class="example-image-link" href="images/wellthy_4.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
-										<img class="example-image" src="images/wellthy_4.jpg" alt=""style="display:none;" />
-									</a>
-								</div>
-								<hr>
-
-							</div>
-							<!-- gutrgoo -->
-							<div class="w3-container">
-								<h5 class="w3-opacity"><b>Gutrgoo.com </b>— SolutionPlanets (Team of 2)</h5>
-								<h6 class="">The newest Social Media platform, targeting micro contenting. Responsible for MVP design pattern with Repository pattern, Websocket client side implementation.
-								</h6>
-								<div>
-									<a class="example-image-link" href="images/gutrgoo_1.png" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-										<img class="example-image" src="images/gutrgoo_1.png" alt="" style="display:none;"/>
-										<span class="blink">SCREENSHOTS:-</span>
-									</a>
-									<a class="example-image-link" href="images/gutrgoo_2.png" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-										<img class="example-image" src="images/gutrgoo_2.png" alt=""style="display:none;" />
-									</a>
-									<a class="example-image-link" href="images/gutrgoo_3.png" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing.">
-										<img class="example-image" src="images/gutrgoo_3.png" alt=""style="display:none;" />
-									</a>
-									<a class="example-image-link" href="images/gutrgoo_4.png" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="images/gutrgoo_4.png" alt=""style="display:none;" />
-									</a>
-								</div>
-								<hr>
-							</div>
-							<!-- shaadi -->
-							<div class="w3-container">
-								<h5 class="w3-opacity"><b>Shaadi.com </b>— PeopleInteractive (I) Pvt. Ltd. (Team of 6)</h5>
-								<h6 class="">The newest Social Media platform, targeting micro contenting. Responsible for MVP design pattern with Repository pattern, Websocket client side implementation.<br>
-									<a href="https://play.google.com/store/apps/details?id=com.shaadi.android" target="_blank" style="text-decoration:none;color:#009688">Project Link- "https://play.google.com/store/apps/details?id=com.shaadi.android"</a>
-								</h6>
-								<div>
-									<a class="example-image-link" href="images/shaadi_1.png" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-										<img class="example-image" src="images/shaadi_1.png" alt="" style="display:none;"/>
-										<span class="blink">SCREENSHOTS:-</span>
-									</a>
-									<a class="example-image-link" href="images/shaadi_2.png" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-										<img class="example-image" src="images/shaadi_2.png" alt=""style="display:none;" />
-									</a>
-									<a class="example-image-link" href="images/shaadi_3.png" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing.">
-										<img class="example-image" src="images/shaadi_3.png" alt=""style="display:none;" />
-									</a>
-									<a class="example-image-link" href="images/shaadi_4.png" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="images/shaadi_4.png" alt=""style="display:none;" />
-									</a>
-								</div>
-								<hr>
-							</div>
-							<!-- foodsocial -->
-							<div class="w3-container">
-								<h5 class="w3-opacity"><b>Food Social </b>— Neosoft Technologies (Team of 2)</h5>
-								<h6 class="">Responsible for social media integration as well as designing and implementing core modules.<br>
-									<a href="https://play.google.com/store/apps/details?id=com.skaratech.foodsocial" target="_blank" style="text-decoration:none;color:#009688">Project Link- "https://play.google.com/store/apps/details?id=com.skaratech.foodsocial"</a>
-								</h6>
-								<div>
-									<a class="example-image-link" href="images/foodsocial_1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-										<img class="example-image" src="images/foodsocial_1.jpg" alt="" style="display:none;"/>
-										<span class="blink">SCREENSHOTS:-</span>
-									</a>
-									<a class="example-image-link" href="images/foodsocial_2.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-										<img class="example-image" src="images/foodsocial_2.jpg" alt=""style="display:none;" />
-									</a>
-								</div>
-								<hr>
-							</div>
-							<!-- jomblo -->
-							<div class="w3-container">
-								<h5 class="w3-opacity"><b>Jomblo </b>— Neosoft Technologies (Individual)</h5>
-								<h6 class="">Responsible for social media integration as well as designing and implementing core modules.<br>
-									<a href="https://play.google.com/store/apps/details?id=com.jomblo.android" target="_blank" style="text-decoration:none;color:#009688">Project Link- "https://play.google.com/store/apps/details?id=com.jomblo.android"</a>
-								</h6>
-								<div>
-									<a class="example-image-link" href="images/jomblo_1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-										<img class="example-image" src="images/jomblo_1.jpg" alt="" style="display:none;"/>
-										<span class="blink">SCREENSHOTS:-</span>
-									</a>
-									<a class="example-image-link" href="images/jomblo_2.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-										<img class="example-image" src="images/jomblo_2.jpg" alt=""style="display:none;" />
-									</a>
-								</div>
-								<hr>
-							</div>
-							<p class="show_more">show more</p>
-							<!-- gangaz -->
-							<section class="load_more" style="display:none">
-								<div class="w3-container">
-									<h5 class="w3-opacity"><b>Gangaz Supermarket </b>— Neosoft Technologies (Individual)</h5>
-									<h6 class="">Responsible for social media integration as well as designing and implementing core modules.<br>
-										<a href="https://play.google.com/store/apps/details?id=com.gangaz.mobi.supermarket.ui" target="_blank" style="text-decoration:none;color:#009688">Project Link- "https://play.google.com/store/apps/details?id=com.gangaz.mobi.supermarket.ui"</a>
-									</h6>
-									<div>
-										<a class="example-image-link" href="images/gangaz_1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-											<img class="example-image" src="images/gangaz_1.jpg" alt="" style="display:none;"/>
-											<span class="blink">SCREENSHOTS:-</span>
-										</a>
-										<a class="example-image-link" href="images/gangaz_2.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-											<img class="example-image" src="images/gangaz_2.jpg" alt=""style="display:none;" />
-										</a>
-									</div>
-									<hr>
-								</div>
-								<!-- moe -->
-								<div class="w3-container">
-									<h5 class="w3-opacity"><b>Mall of the Emirates (MOE) </b>— Neosoft Technologies (Individual)</h5>
-									<h6 class="">Responsible for social media integration as well as designing and implementing core modules.<br>
-										<a href="https://play.google.com/store/apps/details?id=com.mobibus.apps.moe" target="_blank" style="text-decoration:none;color:#009688">Project Link- "https://play.google.com/store/apps/details?id=com.mobibus.apps.moe"</a>
-									</h6>
-									<div>
-										<a class="example-image-link" href="images/moe_1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-											<img class="example-image" src="images/moe_1.jpg" alt="" style="display:none;"/>
-											<span class="blink">SCREENSHOTS:-</span>
-										</a>
-										<a class="example-image-link" href="images/moe_2.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-											<img class="example-image" src="images/moe_2.jpg" alt=""style="display:none;" />
-										</a>
-										<a class="example-image-link" href="images/moe_3.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-											<img class="example-image" src="images/moe_3.jpg" alt=""style="display:none;" />
-										</a>
-										<a class="example-image-link" href="images/moe_4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-											<img class="example-image" src="images/moe_4.jpg" alt=""style="display:none;" />
-										</a>
-									</div>
-									<hr>
-								</div>
-								<!-- ccm -->
-								<div class="w3-container">
-									<h5 class="w3-opacity"><b>City Centre Mall-Official App </b>— Neosoft Technologies (Individual)</h5>
-									<h6 class="">Responsible for social media integration as well as designing and implementing core modules.<br>
-										<a href="https://play.google.com/store/apps/details?id=com.mobibus.apps.citycenter" target="_blank" style="text-decoration:none;color:#009688">Project Link- "https://play.google.com/store/apps/details?id=com.mobibus.apps.citycenter"</a>
-									</h6>
-									<div>
-										<a class="example-image-link" href="images/ccm_1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-											<img class="example-image" src="images/ccm_1.jpg" alt="" style="display:none;"/>
-											<span class="blink">SCREENSHOTS:-</span>
-										</a>
-										<a class="example-image-link" href="images/ccm_2.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-											<img class="example-image" src="images/ccm_2.jpg" alt=""style="display:none;" />
-										</a>
-										<a class="example-image-link" href="images/ccm_3.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-											<img class="example-image" src="images/ccm_3.jpg" alt=""style="display:none;" />
-										</a>
-										<a class="example-image-link" href="images/ccm_4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-											<img class="example-image" src="images/ccm_4.jpg" alt=""style="display:none;" />
-										</a>
-									</div>
-									<hr>
-								</div>
-								<!-- Mischievous Messenger -->
-								<div class="w3-container">
-									<h5 class="w3-opacity"><b>Mischievous Messenger </b>— Neosoft Technologies (Individual)</h5>
-									<h6 class="">This application consist of audio clips, video clips and images that are shared via different messaging application already installed in user device.
-									</h6>
-									<hr>
-								</div>
-								<!-- CommonTrip -->
-								<div class="w3-container">
-									<h5 class="w3-opacity"><b>CommonTrip </b>—</h5>
-									<h6 class="">Ensures that you travel comfortably and securely with great people of your choice.
-									</h6>
-									<hr>
-								</div>
-								<!-- loner -->
-								<div class="w3-container">
-									<h5 class="w3-opacity"><b>Loner </b>—</h5>
-									<h6 class="">Responsible for social media integration as well as designing and implementing core modules.<br>
-										<a href="https://play.google.com/store/apps/details?id=com.digitalportray.loner" target="_blank" style="text-decoration:none;color:#009688">Project Link- "https://play.google.com/store/apps/details?id=com.digitalportray.loner"</a>
-									</h6>
-									<div>
-										<a class="example-image-link" href="images/loner_1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-											<img class="example-image" src="images/loner_1.jpg" alt="" style="display:none;"/>
-											<span class="blink">SCREENSHOTS:-</span>
-										</a>
-									</div>
-									<hr>
-								</div>
-								<!-- Busymums -->
-								<div class="w3-container">
-									<h5 class="w3-opacity"><b>Busymums </b>—Neosoft Technologies (Team of 2)</h5>
-									<h6 class="">This app which would act as an organizing tool for parents and caregiver.  Customize calendar to help, manage organize task.</h6>
-									<hr>
-								</div>
-								<!-- Tabsnap -->
-								<div class="w3-container"> <h5 class="w3-opacity"><b>Tabsnap </b>—Neosoft Technologies (Individual)</h5> <h6 class="">Tabsnap is basically a survey tool to save your time and money when undertaking any data Collection project.</h6> <hr>
-								</div>
-								<!-- YNOTE APP (E-Learning) -->
-								<div class="w3-container">
-									<h5 class="w3-opacity"><b>YNOTE APP (E-Learning) </b>— Neosoft Technologies (Individual)</h5>
-									<h6 class="">The   YNote   is   a   student   utility   tool   that   helps   students   to  organize their  academic work and it can be practically used in classroom which replaces classroom tools into single tablet or gadget.
-									</h6>
-									<hr>
-								</div>
-								<!-- BCI -->
-								<div class="w3-container">
-									<h5 class="w3-opacity"><b>Business Cards Info (BCi) </b>— Neosoft Technologies (Individual)</h5>
-									<h6 class="">Eliminate your business card clutter! Save all your business cards electronically instantly and just sync it with your mobile device. 
-									</h6>
-									<div>
-										<a class="example-image-link" href="images/bci_1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-											<img class="example-image" src="images/bci_1.jpg" alt="" style="display:none;"/>
-											<span class="blink">SCREENSHOTS:-</span>
-										</a>
-										<a class="example-image-link" href="images/bci_2.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-											<img class="example-image" src="images/bci_2.jpg" alt=""style="display:none;" />
-										</a>
-									</div>
-								</div>
-							</section>
-							<p class="show_less" style="display:none">show less</p>
-							<!-- End Right Column -->
-						</div>
-
-						<!-- End Grid -->
-					</div>
-
-					<!-- End Page Container -->
-				</div>
-
-				<footer class="w3-container w3-teal w3-center w3-margin-top">
-					<p>Find me on social media.</p>
-
-					<a href="http://stackoverflow.com/users/1758960/gru?tab=profile" target="_blank"><i class="fa fa-stack-overflow w3-hover-opacity"></i></a>
-					<a href="https://github.com/gru001" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-					<a href="https://in.linkedin.com/in/pranit-sawant-06a35057" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-					<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Aniket jadhav (UI developer)</a></p>
-				</footer>
-				<script>
-					$(document).ready(function(){
-						$(".show_more").click(function(){
-							$(".load_more").show();
-							$(".show_more").hide();
-							$(".show_less").show();
-						});
-						$(".show_less").click(function(){
-							$(".show_more").show();
-							$(".load_more").hide();
-							$(".show_less").hide();
-						});
-					});
-				</script>
-			</body>
-			</html>
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "711259494";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
