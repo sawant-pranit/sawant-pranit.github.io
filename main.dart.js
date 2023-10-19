@@ -72144,7 +72144,7 @@ A.EF.prototype={}
 A.a3U.prototype={
 VP(a){$.aiz().n(0,this,a)}}
 A.Hy.prototype={
-I(a){return new A.wu(B.PV,"Flutter Demo",A.apX(null,A.axo(B.ad,B.LB),B.ce,A.aAg(A.af(a).p3).a4Y(B.h).a6z(B.x3,B.x3),!0),!1,null)}}
+I(a){return new A.wu(B.PV,"Portfolio",A.apX(null,A.axo(B.ad,B.LB),B.ce,A.aAg(A.af(a).p3).a4Y(B.h).a6z(B.x3,B.x3),!0),!1,null)}}
 A.DV.prototype={}
 A.IW.prototype={}
 A.DY.prototype={
